@@ -1,0 +1,14 @@
+module FrontEndIdl{
+	interface FrontEnd{
+		string addItem(in string userId, in string itemId, in string itemName, in long quantity);
+		string listItemAvailability(in string managerId);
+		string removeItem(in string userId,in string itemId,in long quantity);
+
+		string borrowItem(in string userId, in string itemId);
+		string addToWaitingList(in string userId, in string itemId);
+		string findItem(in string userId, in string itemName, in boolean fromOtherServer);
+		string returnItem(in string userId, in string itemId);
+		string exchangeItem(in string userId, in string newItemId, in string oldItemId);
+		oneway void shutdown();
+	};
+};
