@@ -1,4 +1,4 @@
-# Distributed Library Managment System using CORBA
+# Distributed Library Managment System (CORBA)
 
 
 ## Build and Run
